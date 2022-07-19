@@ -57,3 +57,20 @@
 
   </div>
 </template>
+
+<script>
+
+  import Produto from '.services/produtos.js'
+
+  export default {
+    mounted(){
+      Produto.listar().then(resposta => {
+        alert(resposta)
+      })
+    }
+  }
+</script>
+
+<style>
+
+</style>
